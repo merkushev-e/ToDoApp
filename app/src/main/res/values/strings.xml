@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ToDoApp</string>
     <string name="todo">Todo</string>
+    <string name="lorem">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis cupiditate delectus deleniti doloremque ea esse exercitationem fugiat hic nam nemo obcaecati quibusdam, quod rem repellat sit unde, veritatis voluptatum?"
+</string>
+
 </resources>

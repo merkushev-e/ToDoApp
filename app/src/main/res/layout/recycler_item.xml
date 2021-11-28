@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
     app:cardCornerRadius="5dp"
     app:cardElevation="3dp">
 
@@ -30,7 +31,8 @@
             android:id="@+id/image_icon"
             android:layout_width="24dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/view"
+
+            app:layout_constraintBottom_toBottomOf="@+id/tittleText"
             app:layout_constraintStart_toStartOf="@id/guideline2"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_baseline_sticky_note_2_24" />
@@ -42,16 +44,16 @@
             android:text="@string/todo"
             android:textSize="35sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/appCompatImageView3"
+            app:layout_constraintEnd_toStartOf="@+id/edit_note"
             app:layout_constraintStart_toEndOf="@id/image_icon"
             app:layout_constraintTop_toTopOf="parent" />
 
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/appCompatImageView3"
+            android:id="@+id/edit_note"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintBottom_toBottomOf="@+id/tittleText"
             app:layout_constraintEnd_toStartOf="@+id/delete"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_baseline_edit_24" />
@@ -60,7 +62,7 @@
             android:id="@+id/delete"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintBottom_toBottomOf="@+id/tittleText"
             app:layout_constraintEnd_toStartOf="@+id/dragHandleImageView"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_baseline_delete_24" />
@@ -89,14 +91,8 @@
             app:layout_constraintTop_toBottomOf="@+id/tittleText"
             tools:visibility="visible" />
 
-        <View
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:background="#000"
-            app:layout_constraintBottom_toBottomOf="@id/tittleText"
-            app:layout_constraintStart_toStartOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
+
